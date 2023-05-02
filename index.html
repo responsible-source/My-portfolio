@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.4.min.js">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/f71b509515.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#"><img src="./images/My_portfolio_logo.jpeg" class="logo"></a>
+
+                <ul class="class-list">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark"></i>
+                </ul>
+                    <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+            <p>Hello, my name is</p>
+            <h1><span>Vincent Uchenna Paul</span></h1>
+            <p>I'm a <span class="typing"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="./images/my graduation picture3.jpeg" alt="">
+                </div>
+                <div class="col-2">
+                    <h3 class="sub-title">About Me</h3>
+                    <p>A well oriented Front-End developer with 1 year experience working with HTML, CSS, Bootstrap, JavaScript, Git and React. Highly adapt at both independent and collaborative projects, with an emphasis on landing page and website development.</p>
+                    <div class="tab-titles">
+                <p class="tab-links active-link skills" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links experience" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links education" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents skill-content active-tab" id="skills" >
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents experience-content" id="experience">
+                        <ul>
+                            <li><span>2022-current</span><br>Designing Web/App interfaces training at New Horizons</li>
+                            <li><span>2022-2023</span><br>Web app Development training at New Horizons</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents educational-content" id="education" >
+                        <ul>
+                            <li><span>2016-2021</span><br>B.sc in Geological Sciences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I create visually appealing, user-friendly, and responsive websites that are tailored to my clients' needs.</p>
+                <br>
+                <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX</h2>
+                    <p>I design inclusive and accessible products that can be used by everyone, regardless of their abilities.</p>
+                    <br>
+                    <a href="#">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>I create engaging and satisfying user experiences including designing interfaces that adapt to different screen sizes and devices.</p>
+                        <br>
+                        <a href="#">Learn More</a>
+                        </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="./images/work-1.png"> 
+                    <div class="layer">
+                        <h3>Food / Restaurant web app</h3>
+                        <p>The app connects you to good and healthy food people with fast and easy delivery.</p>
+                        <a href="#" style=" margin-top: 20px; background: #fff; color:#ff004f; width: 50px; height: 50px; border-radius: 50%;  line-height: 50px; font-size: 18px; "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png"> 
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>The app connects you to the talented people around the world. Download it from the playstore.</p>
+                        <a href="#" style=" margin-top: 20px; background: #fff; color:#ff004f; width: 50px; height: 50px; border-radius: 50%;  line-height: 50px; font-size: 18px; "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png"> 
+                    <div class="layer">
+                        <h3>Online Shopping Store</h3>
+                        <p>The app makes shopping easier and even better.</p>
+                        <a href="#" style=" margin-top: 20px; background: #fff; color:#ff004f; width: 50px; height: 50px; border-radius: 50%;  line-height: 50px; font-size: 18px; "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h3>Contact Me</h3>
+                    <p><i class="fa-solid fa-envelope"></i>Viccystarks9878@yahoo.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09064892590</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/responsible-source"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/lov3rbuoy_/"><i class="fab fa-instagram"></i></a>
+                        <a href="http://linkedin.com/in/paul-vincent-2795b4265"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/@__mrstarks"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div>
+
+                        <a href="./images/Uchenna's Resume (2).pdf" download class="resume-btn">Download Resume</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                         <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Starks 2023</p>
+        </div>
+    </section>
+
+    
+
+
+    <script src="./script.js"></script>
+</body>
+</html> 
